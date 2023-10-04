@@ -11,6 +11,9 @@ from api.models import db
 from api.routes import api
 from api.admin import setup_admin
 from api.commands import setup_commands
+import stripe
+# import firebase_admin
+# from firebase_admin import credentials, auth
 
 #from models import Person
 
@@ -20,7 +23,8 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 # database condiguration
-db_url = os.getenv("DATABASE_URL")
+
+db_url = os.getenv("https://miniature-robot-4x4r4xw9vj4fqvqj-3001.app.github.dev/")
 if db_url is not None:
     app.config['SQLALCHEMY_DATABASE_URI'] = db_url.replace("postgres://", "postgresql://")
 else:
@@ -63,6 +67,8 @@ def serve_any_other_file(path):
     response.cache_control.max_age = 0 # avoid cache memory
     return response
 
+# cred = credentials.Certificate('src/serviceAccountKey/fund-raising-app-a1439-firebase-adminsdk-75uc6-baf59170a2.json')
+# firebase_admin.initialize_app(cred)
 
 # this only runs if `$ python src/main.py` is executed
 if __name__ == '__main__':
