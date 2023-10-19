@@ -36,6 +36,7 @@ const AboutUs = () => {
                         className="aboutUsCarouselImage"
                         src={carouselImages1[currentImageIndex]}
                         alt="Slider Background"
+                        width="750px"
                     />
                 </div>
                 <div className="col-2"></div>
@@ -49,7 +50,7 @@ const AboutUs = () => {
             </div>
             <div className="row">
                 <div className="col-5 ">
-                    <h1 className="vision">Our Vission</h1>
+                    <h1 className="vision">Our Vision</h1>
                     <h5 className="visionH5Tag"> Empowering Morocco's Communities for a Sustainable Tomorrow</h5>
                     <p className="aboutUsPTag">We envision a future where the people of Morocco thrive, resilient in the face of challenges, and united in hope. Through collective action and unwavering commitment, we strive to catalyze lasting change. Our vision is a brighter, more prosperous Morocco, where every voice is heard, where transparency and fairness prevail, and where we continuously innovate to build a better future. Together, with the support of generous donors, we aim to be a beacon of hope and transformation, driving long-term recovery and resilience for Morocco and its people."</p>
                 </div>
@@ -76,9 +77,9 @@ const AboutUs = () => {
                     onMouseEnter={() => setIsCard1Hovered(true)}
                     onMouseLeave={() => setIsCard1Hovered(false)}>
                     <img src={jessImage} />
-                    <div className="card-body">
-                        <h5 className="card-title">President</h5>
-                        <p className="card-text">Jess</p>
+                    <div className="card-body" style={{ fontSize: "10px", textAlign: "center" }}>
+                        <h5 className="card-title " style={{ fontSize: "15px" }}>Founding Member</h5>
+                        <p className="card-text" style={{ fontSize: "12px" }}>Jess</p>
                         {isCard1Hovered && (
                             <div className="card-footer">
                                 <a href="https://www.linkedin.com/in/Jessmor02" className="btn linkedInIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
@@ -103,9 +104,9 @@ const AboutUs = () => {
                     onMouseEnter={() => setIsCard2Hovered(true)}
                     onMouseLeave={() => setIsCard2Hovered(false)}>
                     <img className="card-hover-bg1" src={vasanthiImage} />
-                    <div className="card-body">
-                        <h5 className="card-title">President</h5>
-                        <p className="card-text">Vasanthi</p>
+                    <div className="card-body" style={{ fontSize: "10px", textAlign: "center" }}>
+                        <h5 className="card-title" style={{ fontSize: "15px" }}>Founding Member</h5>
+                        <p className="card-text" style={{ fontSize: "12px" }}>Vasanthi</p>
                         {isCard2Hovered && (
                             <div className="card-footer">
                                 <a href="https://www.linkedin.com/" className="btn linkedInIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
@@ -131,9 +132,9 @@ const AboutUs = () => {
                     onMouseEnter={() => setIsCard3Hovered(true)}
                     onMouseLeave={() => setIsCard3Hovered(false)}>
                     <img src={ailyImage} />
-                    <div className="card-body">
-                        <h5 className="card-title">President</h5>
-                        <p className="card-text">Aily</p>
+                    <div className="card-body" style={{ fontSize: "10px", textAlign: "center" }}>
+                        <h5 className="card-title" style={{ fontSize: "15px" }}>Founding Member</h5>
+                        <p className="card-text" style={{ fontSize: "12px" }}>Aily</p>
                         {isCard3Hovered && (
                             <div className="card-footer">
                                 <a href="https://www.linkedin.com/in/ailygucfa" className="btn linkedInIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
@@ -159,9 +160,9 @@ const AboutUs = () => {
                     onMouseEnter={() => setIsCard4Hovered(true)}
                     onMouseLeave={() => setIsCard4Hovered(false)}>
                     <img src={jerryImage} />
-                    <div className="card-body" >
-                        <h5 className="card-title">President</h5>
-                        <p className="card-text ">Jerry</p>
+                    <div className="card-body" style={{ fontSize: "10px", textAlign: "center" }}>
+                        <h5 className="card-title" style={{ fontSize: "15px" }}>Founding Member</h5>
+                        <p className="card-text " style={{ fontSize: "12px" }}>Jerry</p>
                         {isCard4Hovered && (
                             <div className="card-footer">
                                 <a href="https://www.linkedin.com/" className="btn linkedInIcon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
